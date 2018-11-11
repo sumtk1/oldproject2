@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settlement_overall"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context="com.gloiot.hygooilstation.ui.activity.trade.SettlementOverallActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180px">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="交易金额"
+                        android:textColor="@color/gray_666"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/tv_settlementoverall_jiaoyi"
+                        style="@style/text_right_28"
+                        android:text=""
+                        android:textColor="@color/orange_FF690C"
+                        android:textSize="60px" />
+
+                    <View style="@style/match_view" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96px">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="到账金额"
+                        android:textColor="@color/gray_666"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/tv_settlementoverall_daozhang"
+                        style="@style/text_right_28"
+                        android:text=""
+                        android:textColor="@color/blue_478AF5"
+                        android:textSize="40px" />
+
+                    <View style="@style/match_view" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96px">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="结算人"
+                        android:textColor="@color/gray_666"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/tv_settlementoverall_personName"
+                        style="@style/text_right_28"
+                        android:text=""
+                        android:textColor="@color/black_555"
+                        android:textSize="28px" />
+
+                    <View style="@style/match_view" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96px">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="交易累计"
+                        android:textColor="@color/gray_666"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/tv_settlementoverall_totalNums"
+                        style="@style/text_right_28"
+                        android:text=""
+                        android:textColor="@color/black_555"
+                        android:textSize="28px" />
+
+                    <View style="@style/match_view" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96px">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="上次结算时间"
+                        android:textColor="@color/gray_666"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/tv_settlementoverall_lastTime"
+                        style="@style/text_right_28"
+                        android:text=""
+                        android:textColor="@color/black_555"
+                        android:textSize="28px" />
+
+                    <View style="@style/match_view" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96px">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="本次结算时间"
+                        android:textColor="@color/gray_666"
+                        android:textSize="28px" />
+
+                    <TextView
+                        android:id="@+id/tv_settlementoverall_thisTime"
+                        style="@style/text_right_28"
+                        android:text=""
+                        android:textColor="@color/black_555"
+                        android:textSize="28px" />
+
+                    <View style="@style/match_view" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_settlementoverall_comfirm"
+                style="@style/style_btn_confirm_orange"
+                android:layout_below="@id/ll_top"
+                android:layout_marginTop="88px"
+                android:text="确定" />
+
+            <TextView
+                android:id="@+id/tv_settlementoverall_cancle"
+                style="@style/style_btn_confirm_gray"
+                android:layout_below="@id/tv_settlementoverall_comfirm"
+                android:layout_marginBottom="100px"
+                android:layout_marginTop="60px"
+                android:text="取消" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

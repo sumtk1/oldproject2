@@ -1,0 +1,1 @@
+include ':app', ':base-adapter-library', ':autolayout', ':galleryfinal', ':photopicker', ':lib-zxing', ':easyrecyclerview', ':reclib-qq', ':chatsdk'

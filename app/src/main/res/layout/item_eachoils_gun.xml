@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gloiot.hygooilstation.ui.widget.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.gloiot.hygooilstation.ui.widget.swipe.FrontLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_oilstype"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/shape_circle_30"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="26px"
+                app:layout_auto_baseheight="width" />
+
+            <TextView
+                android:id="@+id/tv_oilgunNum"
+                style="@style/text_right_28"
+                android:text=""
+                android:textSize="32px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.gloiot.hygooilstation.ui.widget.swipe.FrontLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90px">
+
+        <Button
+            android:id="@+id/btn_oilgun_delete"
+            android:layout_width="170px"
+            android:layout_height="match_parent"
+            android:background="@color/orange_FF690C"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="28px" />
+    </LinearLayout>
+
+
+</com.gloiot.hygooilstation.ui.widget.swipe.SwipeLayout>

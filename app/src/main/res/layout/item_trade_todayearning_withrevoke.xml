@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gloiot.hygooilstation.ui.widget.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.gloiot.hygooilstation.ui.widget.swipe.FrontLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_oddNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="24px"
+                android:text=""
+                android:textColor="@color/gray_666"
+                android:textSize="20px" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_oddNum"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="16px"
+                android:text=""
+                android:textColor="@color/gray_999"
+                android:textSize="24px" />
+
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="24px"
+                android:text=""
+                android:textColor="@color/black_555"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_text_oiltype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="24px"
+                android:layout_toLeftOf="@id/tv_type"
+                android:text="油品型号"
+                android:textColor="@color/black_555"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_text_oilprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_text_oiltype"
+                android:layout_below="@id/tv_type"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="12px"
+                android:text="单价"
+                android:textColor="@color/black_555"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_oilsPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_type"
+                android:layout_marginTop="12px"
+                android:layout_toRightOf="@id/tv_text_oilprice"
+                android:text=""
+                android:textColor="@color/black_555"
+                android:textSize="28px" />
+
+            <View style="@style/match_view" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_below="@id/rl_top"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/tv_left"
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="0px"
+                        android:text="交易金额"
+                        android:textColor="@color/orange_EC681F"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/tv_jiaoyi"
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@id/tv_left"
+                        android:text=""
+                        android:textColor="@color/orange_EC681F"
+                        android:textSize="30px"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="32px"
+                android:layout_gravity="center_vertical"
+                android:background="#F3F3F3" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/tv_right"
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="0px"
+                        android:text="到账金额"
+                        android:textColor="@color/blue_478AF5"
+                        android:textSize="24px" />
+
+                    <TextView
+                        android:id="@+id/tv_daozhang"
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@id/tv_right"
+                        android:text=""
+                        android:textColor="@color/blue_478AF5"
+                        android:textSize="30px"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </com.gloiot.hygooilstation.ui.widget.swipe.FrontLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200px">
+
+        <Button
+            android:id="@+id/btn_revoke"
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:background="@color/red_FF6D63"
+            android:gravity="center"
+            android:text="撤单"
+            android:textColor="@color/white"
+            android:textSize="30px" />
+    </LinearLayout>
+
+</com.gloiot.hygooilstation.ui.widget.swipe.SwipeLayout>

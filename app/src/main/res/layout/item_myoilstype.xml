@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="290px"
+        android:background="@drawable/bg_btn_white">
+
+        <TextView
+            android:id="@+id/tv_oilstype_image"
+            android:layout_width="126px"
+            android:layout_height="126px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="56px"
+            android:background="@drawable/shape_circle_63"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="56px"
+            app:layout_auto_baseheight="width" />
+
+        <TextView
+            android:id="@+id/tv_oilstype_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40px"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="26px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

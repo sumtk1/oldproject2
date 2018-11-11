@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_my_title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的"
+            android:textColor="@color/black_555"
+            android:textSize="36px"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_ccc"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_my_title">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_my_boss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_my_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_df"/>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/rl_my_wallet"
+                        style="@style/style_relativelayout_item">
+
+                        <ImageView
+                            style="@style/imageview_left_my"
+                            android:src="@mipmap/qianbao"/>
+
+                        <TextView
+                            style="@style/black555_pint_16"
+                            android:layout_marginLeft="112px"
+                            android:text="钱包"/>
+
+                        <View
+                            style="@style/match_view"
+                            android:layout_marginLeft="40px"/>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/rl_my_bankCard"
+                        style="@style/style_relativelayout_item">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            style="@style/imageview_left_my"
+                            android:src="@mipmap/wodyinghangka"/>
+
+                        <TextView
+                            style="@style/black555_pint_16"
+                            android:layout_marginLeft="112px"
+                            android:text="我的银行卡"/>
+
+                        <View
+                            style="@style/match_view"
+                            android:layout_marginLeft="40px"/>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/rl_my_alipay"
+                        style="@style/style_relativelayout_item">
+
+                        <ImageView
+                            style="@style/imageview_left_my"
+                            android:src="@drawable/ic_wodzhifubao"/>
+
+                        <TextView
+                            style="@style/black555_pint_16"
+                            android:layout_marginLeft="112px"
+                            android:text="我的支付宝"/>
+
+                        <View style="@style/match_view"/>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_my_cashier"
+                    style="@style/style_relativelayout_item"
+                    android:layout_marginTop="30px">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_df"/>
+
+                    <ImageView
+                        style="@style/imageview_left_my"
+                        android:src="@mipmap/shouyinyuanguanli"/>
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="112px"
+                        android:text="收银员管理"/>
+
+                    <View style="@style/match_view"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_my_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30px"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_df"/>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/rl_my_suggestion_boss"
+                        style="@style/style_relativelayout_item">
+
+                        <ImageView
+                            style="@style/imageview_left_my"
+                            android:src="@mipmap/yijianfankui"/>
+
+                        <TextView
+                            style="@style/black555_pint_16"
+                            android:layout_marginLeft="112px"
+                            android:text="意见反馈"/>
+
+                        <View
+                            style="@style/match_view"
+                            android:layout_marginLeft="40px"/>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/rl_my_setting"
+                        style="@style/style_relativelayout_item">
+
+                        <ImageView
+                            style="@style/imageview_left_my"
+                            android:src="@mipmap/shezhi"/>
+
+                        <TextView
+                            style="@style/black555_pint_16"
+                            android:layout_marginLeft="112px"
+                            android:text="设置"/>
+
+                        <View
+                            style="@style/match_view"
+                            android:layout_marginLeft="40px"/>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/rl_my_instructions_boss"
+                        style="@style/style_relativelayout_item">
+
+                        <ImageView
+                            style="@style/imageview_left_my"
+                            android:src="@mipmap/help"/>
+
+                        <TextView
+                            style="@style/black555_pint_16"
+                            android:layout_marginLeft="112px"
+                            android:text="使用说明"/>
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_df"/>
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/ll_my_cashier"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_my_suggestion_cashier"
+                    style="@style/style_relativelayout_item"
+                    android:layout_marginTop="30px">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_df"/>
+
+                    <ImageView
+                        style="@style/imageview_left_my"
+                        android:src="@mipmap/yijianfankui"/>
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="112px"
+                        android:text="意见反馈"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="40px"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_my_instructions_cashier"
+                    style="@style/style_relativelayout_item">
+
+                    <ImageView
+                        style="@style/imageview_left_my"
+                        android:src="@mipmap/help"/>
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="112px"
+                        android:text="使用说明"/>
+
+                    <View style="@style/match_view"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_my_modifyLoginpwd"
+                    style="@style/style_relativelayout_item"
+                    android:layout_marginTop="30px">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:background="@color/gray_df"/>
+
+                    <ImageView
+                        style="@style/imageview_left_my"
+                        android:src="@mipmap/xiugaidenglu"/>
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="115px"
+                        android:text="修改登录密码"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="40px"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_my_logout"
+                    style="@style/style_relativelayout_item">
+
+                    <ImageView
+                        style="@style/imageview_left_my"
+                        android:src="@mipmap/tuichuzhanghao"/>
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="115px"
+                        android:text="退出登录"/>
+
+                    <View style="@style/match_view"/>
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </ScrollView>
+
+</com.zhy.autolayout.AutoRelativeLayout>

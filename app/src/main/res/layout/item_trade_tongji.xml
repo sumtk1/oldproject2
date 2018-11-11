@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="460px"
+        android:background="@mipmap/tongji_beij">
+
+        <RelativeLayout
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/yuanquan2"
+            app:layout_auto_baseheight="width">
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="126px"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="28px" />
+
+            <!--
+               <View
+                android:layout_width="40px"
+                android:layout_height="5px"
+                android:layout_below="@id/tv_month"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:background="@color/white" />
+            -->
+
+            <com.gloiot.hygooilstation.ui.widget.NumIncreaseTextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_month"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="80px" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

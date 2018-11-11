@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/transparent"
+              android:gravity="right"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/pop_child_layout2"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView android:layout_width="7dp"
+                   android:layout_height="4dp"
+                   android:layout_marginLeft="101dp"
+                   android:scaleType="fitXY"
+                   android:src="@mipmap/sanjiaoxing"/>
+
+        <ListView
+            android:id="@+id/title_f_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_3"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="1dp"
+            android:scrollingCache="false"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

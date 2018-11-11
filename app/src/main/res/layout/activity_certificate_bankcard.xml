@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_certificate_bankcard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_bg"
+                tools:context="com.gloiot.hygooilstation.ui.activity.authentication.CertificateBankcardActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/in_titlebar">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_qualification_commit">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/style_relativelayout_96">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="选择银行"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_certificateBankcard_selectbank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="210px">
+
+                        <TextView
+                            android:id="@+id/tv_certificateBankcard_selectbank"
+                            style="@style/black555_pint_16"
+                            android:layout_marginLeft="5px"
+                            android:hint="请选择银行"
+                            android:textColorHint="@color/gray_bbb"/>
+
+                        <ImageView
+                            style="@style/imageview_right"
+                            android:src="@mipmap/xialaicon"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/style_relativelayout_96">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="开户行名称"/>
+
+                    <EditText
+                        android:id="@+id/et_certificateBankcard_branchName"
+                        style="@style/edit_hint"
+                        android:layout_marginLeft="210px"
+                        android:hint="请输入支行名称"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/style_relativelayout_96">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="卡号"/>
+
+                    <EditText
+                        android:id="@+id/et_certificateBankcard_cardNum"
+                        style="@style/edit_hint"
+                        android:layout_marginLeft="210px"
+                        android:hint="请输入卡号"
+                        android:inputType="number"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/style_relativelayout_96">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="卡类型"/>
+
+                    <TextView
+                        android:id="@+id/tv_certificateBankcard_cardType"
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="210px"
+                        android:text="储蓄卡"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/style_relativelayout_96">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="持卡人姓名"/>
+
+                    <EditText
+                        android:id="@+id/et_certificateBankcard_chikaName"
+                        style="@style/edit_hint"
+                        android:layout_marginLeft="210px"
+                        android:hint="请输入持卡人姓名"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/style_relativelayout_96">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="身份证号码"/>
+
+                    <EditText
+                        android:id="@+id/et_certificateBankcard_paperNum"
+                        style="@style/edit_hint"
+                        android:layout_marginLeft="210px"
+                        android:digits="0123456789xX"
+                        android:hint="请输入身份证号码"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/style_relativelayout_96">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="手机号"/>
+
+                    <EditText
+                        android:id="@+id/et_certificateBankcard_phoneNum"
+                        style="@style/edit_hint"
+                        android:layout_marginLeft="210px"
+                        android:hint="请输入银行预留的手机号码"
+                        android:inputType="number"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_bg"
+                    android:padding="30px"
+                    android:text="银行卡信息填写错误，会导致提现时金额无法到账,请认真核对后再提交"
+                    android:textColor="@color/gray_999"
+                    android:textSize="22px"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_qualification_commit"
+            style="@style/style_btn_confirm_orange"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20px"
+            android:text="提交"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gloiot.hygooilstation.ui.widget.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                       android:id="@+id/swipelayout"
+                                                       android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content">
+
+    <com.gloiot.hygooilstation.ui.widget.swipe.FrontLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/bg_blue_4">
+
+            <ImageView
+                android:id="@+id/iv_bankCard_image"
+                android:layout_width="70px"
+                android:layout_height="68px"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_in_com_bank"
+                app:layout_auto_baseheight="width"/>
+
+
+            <TextView
+                android:id="@+id/tv_bankCard_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130px"
+                android:layout_marginTop="20px"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="中国工商银行"
+                android:textColor="@color/white"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_bankCard_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130px"
+                android:layout_marginTop="70px"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="储蓄卡"
+                android:textColor="@color/white"
+                android:textSize="24px"/>
+
+            <TextView
+                android:id="@+id/tv_bankCard_cardNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20px"
+                android:layout_marginLeft="130px"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="*** **** **** 1234"
+                android:textColor="@color/white"
+                android:textSize="28px"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.gloiot.hygooilstation.ui.widget.swipe.FrontLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200px">
+
+        <Button
+            android:id="@+id/btn_bankCard_delete"
+            android:layout_width="170px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="40px"
+            android:background="@drawable/bg_shape_red_ff6d63_4dp"
+            android:gravity="center"
+            android:text="解绑"
+            android:textColor="@color/white"
+            android:textSize="28px"/>
+    </LinearLayout>
+
+
+</com.gloiot.hygooilstation.ui.widget.swipe.SwipeLayout>

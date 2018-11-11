@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.gloiot.hygooilstation.ui.activity.trade.aboutpay.SelectScanTypeActivity">
+
+    <include layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px">
+
+        <View
+            android:layout_width="12px"
+            android:layout_height="32px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:background="@color/orange_F57F3E" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18px"
+            android:text="扫码方式"
+            android:textColor="@color/gray_666"
+            android:textSize="30px" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_type_hygo"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/bg_btn_white_3">
+
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:src="@drawable/ic_scan_huanyougou"
+            app:layout_auto_baseheight="width" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="152px"
+            android:text="扫描环游购二维码"
+            android:textColor="@color/black_333"
+            android:textSize="30px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32px"
+            android:src="@drawable/ic_arrow_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_type_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="24px"
+        android:background="@drawable/bg_btn_white_3">
+
+        <ImageView
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32px"
+            android:src="@drawable/ic_scan_weichat"
+            app:layout_auto_baseheight="width" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="152px"
+            android:text="扫描微信二维码"
+            android:textColor="@color/black_333"
+            android:textSize="30px" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32px"
+            android:src="@drawable/ic_arrow_right" />
+
+    </RelativeLayout>
+
+</LinearLayout>

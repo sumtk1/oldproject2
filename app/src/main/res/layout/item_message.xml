@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30px">
+
+    <com.zhy.autolayout.widget.AutoCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30px"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="5px"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 系统消息和交易提醒的头部布局-->
+            <RelativeLayout
+                android:id="@+id/rl_item_message_top1"
+                android:layout_width="match_parent"
+                android:layout_height="108px"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_item_message"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    app:layout_auto_baseheight="width" />
+
+                <TextView
+                    android:id="@+id/tv_item_message_time"
+                    style="@style/text_right_28"
+                    android:text=""
+                    android:textColor="@color/gray_666"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:id="@+id/tv_item_message_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginRight="20px"
+                    android:layout_toLeftOf="@id/tv_item_message_time"
+                    android:layout_toRightOf="@id/iv_item_message"
+                    android:text=""
+                    android:textColor="@color/black_333"
+                    android:textSize="28px" />
+            </RelativeLayout>
+            <!-- 提现消息的头部布局-->
+            <RelativeLayout
+                android:id="@+id/rl_item_message_top2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_item_message_tixian_titile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30px"
+                    android:layout_marginTop="42px"
+                    android:text=""
+                    android:textColor="@color/black_333"
+                    android:textSize="28px" />
+
+                <TextView
+                    android:id="@+id/tv_item_message_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_item_message_tixian_titile"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40px"
+                    android:text="提现金额"
+                    android:textColor="@color/gray_666"
+                    android:textSize="26px" />
+
+                <TextView
+                    android:id="@+id/tv_item_message_tixian_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_item_message_text2"
+                    android:layout_centerHorizontal="true"
+                    android:padding="30px"
+                    android:text=""
+                    android:textColor="@color/orange_FF873D"
+                    android:textSize="50px" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/tv_item_message_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#eeeeee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- 系统消息的底部布局-->
+                <RelativeLayout
+                    android:id="@+id/rl_item_message_system"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_item_message_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="30px"
+                        android:text=""
+                        android:textColor="@color/gray_666"
+                        android:textSize="28px" />
+                </RelativeLayout>
+
+                <!-- 交易提醒的底部布局-->
+                <RelativeLayout
+                    android:id="@+id/rl_item_message_jiaoyi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_item_message_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:text=""
+                        android:textColor="@color/orange_FEA523"
+                        android:textSize="36px" />
+
+                    <TextView
+                        android:id="@+id/tv_item_message_store"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="30px"
+                        android:layout_toLeftOf="@id/tv_item_message_points"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/orange_FEA523"
+                        android:textSize="32px" />
+
+                    <TextView
+                        android:id="@+id/tv_item_message_record2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_item_message_store"
+                        android:layout_marginBottom="30px"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="30px"
+                        android:layout_toLeftOf="@id/tv_item_message_points"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="已收到"
+                        android:textColor="@color/gray_666"
+                        android:textSize="26px" />
+                </RelativeLayout>
+
+                <!-- 提现消息的底部布局-->
+                <LinearLayout
+                    android:id="@+id/ll_item_message_tixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70px">
+
+                        <TextView
+                            style="@style/black555_pint_16"
+                            android:text="提现银行："
+                            android:textColor="@color/gray_666"
+                            android:textSize="26px" />
+
+                        <TextView
+                            android:id="@+id/tv_item_message_tixian_bank"
+                            style="@style/black555_pint_16"
+                            android:layout_marginLeft="170px"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black_333"
+                            android:textSize="26px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70px">
+
+                        <TextView
+                            style="@style/black555_pint_16"
+                            android:text="提现时间："
+                            android:textColor="@color/gray_666"
+                            android:textSize="26px" />
+
+                        <TextView
+                            android:id="@+id/tv_item_message_tixian_tixiantime"
+                            style="@style/black555_pint_16"
+                            android:layout_marginLeft="170px"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black_333"
+                            android:textSize="26px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70px">
+
+                        <TextView
+                            style="@style/black555_pint_16"
+                            android:text="到账时间："
+                            android:textColor="@color/gray_666"
+                            android:textSize="26px" />
+
+                        <TextView
+                            android:id="@+id/tv_item_message_tixian_daozhangtime"
+                            style="@style/black555_pint_16"
+                            android:layout_marginLeft="170px"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black_333"
+                            android:textSize="26px" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30px"
+                            android:layout_marginTop="20px"
+                            android:text="备注："
+                            android:textColor="@color/gray_666"
+                            android:textSize="26px" />
+
+                        <TextView
+                            android:id="@+id/tv_item_message_tixian_remark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="170px"
+                            android:paddingBottom="40px"
+                            android:paddingRight="20px"
+                            android:paddingTop="20px"
+                            android:text=""
+                            android:textColor="@color/black_333"
+                            android:textSize="26px" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </com.zhy.autolayout.widget.AutoCardView>
+
+</LinearLayout>

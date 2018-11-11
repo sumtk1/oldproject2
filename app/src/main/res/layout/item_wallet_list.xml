@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:background="@drawable/bg_btn_white">
+
+        <TextView
+            android:id="@+id/tv_walletlist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="46px"
+            android:text=""
+            android:textColor="@color/black_555"
+            android:textSize="32px" />
+
+
+        <TextView
+            android:id="@+id/tv_walletlist_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_walletlist_name"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="20px"
+            android:text=""
+            android:textColor="@color/gray_666"
+            android:textSize="24px" />
+
+        <TextView
+            android:id="@+id/tv_walletlist_money"
+            style="@style/text_right_28"
+            android:text=""
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tv_walletlist_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_walletlist_money"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="5px"
+            android:text=""
+            android:textColor="@color/red_FF0024"
+            android:textSize="22px" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_statisticsDetail_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="44px"
+            android:layout_marginTop="30px"
+            android:text=""
+            android:textColor="@color/orange_FF690C"
+            android:textSize="50px" />
+
+        <TextView
+            android:id="@+id/tv_statisticsDetail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_statisticsDetail_money"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="20px"
+            android:text=""
+            android:textColor="@color/gray_666"
+            android:textSize="24px" />
+
+        <RelativeLayout
+            android:id="@+id/rl_youhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50px"
+            android:layout_toRightOf="@id/tv_statisticsDetail_money">
+
+            <TextView
+                android:id="@+id/tv_statisticsDetail_youhui"
+                style="@style/text_right_28"
+                android:text=""
+                android:textColor="@color/blue_478AF5"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/tv_text_youhui"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:layout_toLeftOf="@id/tv_statisticsDetail_youhui"
+                android:text="优惠:"
+                android:textColor="@color/blue_478AF5"
+                android:textSize="24px" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_shishou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18px"
+            android:layout_toRightOf="@id/tv_statisticsDetail_time"
+            android:layout_below="@id/rl_youhui">
+
+            <TextView
+                android:id="@+id/tv_statisticsDetail_shishou"
+                style="@style/text_right_28"
+                android:text=""
+                android:textColor="@color/orange_FEA523"
+                android:textSize="24px" />
+
+            <TextView
+                android:id="@+id/tv_text_shishou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20px"
+                android:layout_toLeftOf="@id/tv_statisticsDetail_shishou"
+                android:text="实收:"
+                android:textColor="@color/orange_FEA523"
+                android:textSize="24px" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

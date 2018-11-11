@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorTabNormal">#777777</color>
+    <color name="colorTabSelected">@color/orange_FF690C</color>
+    <color name="bg_translucence">#80000000</color>
+    <color name="color_bg">#F3F3F3</color>
+    <color name="bg_color">#F3F3F3</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_333">#333333</color>
+    <color name="black_555">#555555</color>
+    <color name="gray_bbb">#BBBBBB</color>
+    <color name="gray_888">#888888</color>
+    <color name="gray_df">#DFDFDF</color>
+    <color name="blue_478AF5">#478AF5</color>
+    <color name="blue_059EDA">#059EDA</color>
+    <color name="blue_176BEA">#176BEA</color>
+    <color name="blue_29b0e6">#29B0E6</color>
+    <color name="green_24C0B3">#24C0B3</color>
+    <color name="green_01C971">#01C971</color>
+    <color name="green_3AD57F">#3AD57F</color>
+    <color name="green_6ED12B">#6ED12B</color>
+    <color name="green_20DC91">#20DC91</color>
+    <color name="orange_FF690C">#FF690C</color>
+    <color name="orange_FEA523">#FEA523</color>
+    <color name="orange_F68B38">#F68B38</color>
+    <color name="orange_FD853A">#FD853A</color>
+    <color name="orange_FF873D">#FF873D</color>
+    <color name="orange_F29305">#F29305</color>
+    <color name="orange_ED5E5E">#ED5E5E</color>
+    <color name="orange_EC681F">#EC681F</color>
+    <color name="orange_F57F3E">#F57F3E</color>
+    <color name="gray_666">#666666</color>
+    <color name="gray_777">#777777</color>
+    <color name="gray_999">#999999</color>
+    <color name="gray_b4b4b4">#B4B4B4</color>
+    <color name="gray_ccc">#CCCCCC</color>
+    <color name="gray_ddd">#DDDDDD</color>
+    <color name="gray_f3">#F3F3F3</color>
+    <color name="gray_e0">#E0E0E0</color>
+    <color name="gray_e5e5e5">#E5E5E5</color>
+    <color name="gray_b4">#B4B4B4</color>
+    <color name="purple_992FDF">#992FDF</color>
+    <color name="purple_D824CF">#D824CF</color>
+    <color name="red">#FF0000</color>
+    <color name="red_FF0024">#FF0024</color>
+    <color name="red_ff5f5f">#FF5F5F</color>
+    <color name="red_FF6D63">#FF6D63</color>
+    <color name="red_ff7676">#FF7676</color>
+
+    <color name="item_bg_pressed">#DFDFDF</color>
+    <color name="item_bg_checked">#EFEFEF</color>
+    <color name="confirmButton_deep">#cc540a</color>
+    <color name="confirmButton_shallow">#FF690C</color>
+    <color name="cancelButton_deep">#666666</color>
+    <color name="cancelButton_shallow">#999999</color>
+
+    <color name="alpha_1">#1000</color>
+
+    <color name="transparent">#0000</color>
+
+    <color name="red_normal">#FF0000</color>
+    <color name="red_pressed">#FF6666</color>
+    <color name="green_normal">#37C000</color>
+    <color name="green_pressed">#30A070</color>
+    <color name="purple_normal">#9932CC</color>
+    <color name="purple_pressed">#9F79EE</color>
+
+</resources>

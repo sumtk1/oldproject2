@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_bg"
+                tools:context="com.gloiot.hygooilstation.ui.activity.mine.wallet.WalletActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_wallet_top"
+        android:layout_width="match_parent"
+        android:layout_height="372px"
+        android:layout_below="@id/in_titlebar"
+        android:background="@drawable/bg_my_pocket"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_wallet_stationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="144px"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="30px"
+            android:visibility="gone"/>
+
+        <com.gloiot.hygooilstation.ui.widget.NumIncreaseTextView
+            android:id="@+id/tv_wallet_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="144px"
+            android:text="0.00"
+            android:textColor="@color/white"
+            android:textSize="100px"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已结算"
+                android:textColor="@color/white"
+                android:textSize="30px"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_symbol_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_wallet_yijiesuan"
+                    android:layout_marginBottom="5px"
+                    android:text="￥"
+                    android:textColor="@color/white"
+                    android:textSize="32px"/>
+
+                <TextView
+                    android:id="@+id/tv_wallet_yijiesuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6px"
+                    android:layout_marginTop="36px"
+                    android:layout_toRightOf="@id/tv_symbol_1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="56px"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="60px"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未结算"
+                android:textColor="@color/white"
+                android:textSize="30px"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_symbol_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_wallet_weijiesuan"
+                    android:layout_marginBottom="5px"
+                    android:text="￥"
+                    android:textColor="@color/white"
+                    android:textSize="32px"/>
+
+                <TextView
+                    android:id="@+id/tv_wallet_weijiesuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6px"
+                    android:layout_marginTop="36px"
+                    android:layout_toRightOf="@id/tv_symbol_2"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="56px"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_wallet_ketiqu"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_below="@id/ll_wallet_top"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:text="可提取"
+            android:textColor="@color/gray_666"
+            android:textSize="32px"/>
+
+        <TextView
+            android:id="@+id/tv_symbol_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_wallet_ketiqu"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="160px"
+            android:text="￥"
+            android:textColor="@color/black_333"
+            android:textSize="30px"/>
+
+        <TextView
+            android:id="@+id/tv_wallet_ketiqu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="30px"
+            android:layout_toRightOf="@id/tv_symbol_left"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black_333"
+            android:textSize="48px"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_wallet_manual"
+        style="@style/style_btn_confirm_orange"
+        android:layout_below="@id/rl_wallet_ketiqu"
+        android:layout_marginTop="88px"
+        android:text="提取到银行卡"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_wallet_automatic"
+        style="@style/style_btn_confirm_gray"
+        android:layout_below="@id/tv_wallet_manual"
+        android:layout_marginTop="60px"
+        android:text="自动提现"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_wallet_extract_to_alipay"
+        style="@style/style_btn_confirm_gray"
+        android:layout_below="@id/tv_wallet_manual"
+        android:layout_marginTop="60px"
+        android:text="提取到支付宝"
+        android:visibility="gone"/>
+
+</RelativeLayout>

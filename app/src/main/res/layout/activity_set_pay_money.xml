@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.gloiot.hygooilstation.ui.activity.trade.aboutpay.SetPayMoneyActivity">
+
+    <include layout="@layout/include_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_station_name"
+                android:layout_width="wrap_content"
+                android:layout_height="112px"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_oil_station"
+                android:drawablePadding="15px"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/orange_F57F3E"
+                android:textSize="32px" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:background="@drawable/bg_white_2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36px"
+                        android:text="输入油枪号"
+                        android:textColor="@color/gray_666"
+                        android:textSize="30px" />
+
+                    <EditText
+                        android:id="@+id/et_oilgun_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="270px"
+                        android:layout_marginRight="36px"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请输入油枪号"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_333"
+                        android:textColorHint="@color/gray_b4"
+                        android:textSize="30px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36px"
+                        android:text="油品型号"
+                        android:textColor="@color/gray_666"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_oil_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="270px"
+                        android:layout_marginRight="36px"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/black_333"
+                        android:textSize="30px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36px"
+                        android:text="油品单价"
+                        android:textColor="@color/gray_666"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_symbol_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="270px"
+                        android:text="￥"
+                        android:textColor="@color/black_333"
+                        android:textSize="26px" />
+
+                    <TextView
+                        android:id="@+id/tv_oil_unitprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="36px"
+                        android:layout_toRightOf="@id/tv_symbol_1"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_333"
+                        android:textSize="30px" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="24px"
+                android:background="@drawable/bg_white_2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36px"
+                        android:text="输入金额"
+                        android:textColor="@color/gray_666"
+                        android:textSize="30px" />
+
+                    <TextView
+                        android:id="@+id/tv_symbol_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="270px"
+                        android:text="￥"
+                        android:textColor="@color/black_333"
+                        android:textSize="26px" />
+
+                    <EditText
+                        android:id="@+id/et_input_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15px"
+                        android:layout_marginRight="36px"
+                        android:layout_toRightOf="@id/tv_symbol_2"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="请输入金额"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_333"
+                        android:textColorHint="@color/gray_b4"
+                        android:textSize="30px" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2px"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/gray_e0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36px"
+                        android:text="手机号/车牌号"
+                        android:textColor="@color/gray_666"
+                        android:textSize="30px" />
+
+                    <EditText
+                        android:id="@+id/et_remark"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="270px"
+                        android:layout_marginRight="36px"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="非必填"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/black_333"
+                        android:textColorHint="@color/gray_b4"
+                        android:textSize="30px" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_next"
+                style="@style/style_btn_confirm_orange"
+                android:layout_marginTop="90px"
+                android:text="下一步" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

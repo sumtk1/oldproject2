@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_modify_oilstation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_bg"
+                tools:context="com.gloiot.hygooilstation.ui.activity.oilstation.ModifyOilstationActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="20px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_modifyoilstation_image"
+                    style="@style/style_relativelayout_item">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="油站图片"/>
+
+                    <ImageView
+                        style="@style/imageview_right"
+                        android:src="@mipmap/xiangyoujiantou"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/style_relativelayout_96">
+
+                    <TextView
+                        android:id="@+id/tv_zuoji"
+                        style="@style/black555_pint_16"
+                        android:text="油站电话"/>
+
+                    <EditText
+                        android:id="@+id/et_modifyoilstation_zuojihao"
+                        android:layout_width="180px"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="座机号码"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:paddingLeft="10px"
+                        android:paddingRight="30px"
+                        android:text=""
+                        android:textColor="@color/gray_666"
+                        android:textColorHint="@color/gray_bbb"
+                        android:textSize="28px"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        android:id="@+id/tv_lianzifu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/et_modifyoilstation_zuojihao"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="@color/black_555"
+                        android:textSize="28px"
+                        android:visibility="visible"/>
+
+                    <EditText
+                        android:id="@+id/et_modifyoilstation_quhao"
+                        android:layout_width="120px"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/tv_lianzifu"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="区号"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:paddingLeft="30px"
+                        android:paddingRight="10px"
+                        android:text=""
+                        android:textColor="@color/gray_666"
+                        android:textColorHint="@color/gray_bbb"
+                        android:textSize="28px"
+                        android:visibility="visible"/>
+
+                    <EditText
+                        android:id="@+id/et_modifyoilstation_phoneNum"
+                        style="@style/edit_right_28"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@id/tv_zuoji"
+                        android:digits="0123456789-"
+                        android:ellipsize="start"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入油站电话号码"
+                        android:inputType="number"
+                        android:text=""
+                        android:visibility="gone"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="30px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_modifyoilstation_area"
+                    style="@style/style_relativelayout_item">
+
+                    <TextView
+                        android:id="@+id/tv_01"
+                        style="@style/black555_pint_16"
+                        android:text="油站区域"/>
+
+                    <ImageView
+                        android:id="@+id/iv_01"
+                        style="@style/imageview_right"
+                        android:src="@mipmap/xiangyoujiantou"/>
+
+                    <TextView
+                        android:id="@+id/tv_modifyoilstation_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:layout_toLeftOf="@id/iv_01"
+                        android:layout_toRightOf="@id/tv_01"
+                        android:ellipsize="start"
+                        android:gravity="right|center_vertical"
+                        android:hint="请选择油站区域"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/gray_666"
+                        android:textColorHint="@color/gray_bbb"
+                        android:textSize="28px"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="30px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/style_relativelayout_96">
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        style="@style/black555_pint_16"
+                        android:text="油站地址"/>
+
+                    <EditText
+                        android:id="@+id/et_modifyoilstation_location"
+                        style="@style/edit_right_28"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@id/tv_location"
+                        android:ellipsize="start"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入油站详细地址"
+                        android:text=""/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="30px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_modifyoilstation_coordinate"
+                    style="@style/style_relativelayout_item">
+
+                    <TextView
+                        android:id="@+id/tv_02"
+                        style="@style/black555_pint_16"
+                        android:text="油站坐标"/>
+
+                    <ImageView
+                        android:id="@+id/iv_02"
+                        style="@style/imageview_right"
+                        android:src="@mipmap/xiangyoujiantou"/>
+
+                    <TextView
+                        android:id="@+id/tv_modifyoilstation_coordinate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginRight="20px"
+                        android:layout_toLeftOf="@id/iv_02"
+                        android:layout_toRightOf="@id/tv_02"
+                        android:ellipsize="start"
+                        android:gravity="right|center_vertical"
+                        android:hint="请在地图中标记油站位置"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/gray_666"
+                        android:textColorHint="@color/gray_bbb"
+                        android:textSize="28px"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="30px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90px">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="油站简介"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="30px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="332px">
+
+                    <EditText
+                        android:id="@+id/et_modifyoilstation_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginRight="30px"
+                        android:layout_marginTop="20px"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="请对油站描述......"
+                        android:textColor="@color/gray_666"
+                        android:textColorHint="@color/gray_bbb"
+                        android:textSize="28px"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/ll_top"
+                android:layout_marginRight="30px"
+                android:layout_marginTop="10px"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_modifyOlistation_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/gray_666"
+                    android:textSize="28px"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textColor="@color/gray_666"
+                    android:textSize="28px"/>
+
+                <TextView
+                    android:id="@+id/tv_modifyOlistation_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150"
+                    android:textColor="@color/gray_666"
+                    android:textSize="28px"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

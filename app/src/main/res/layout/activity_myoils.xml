@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar">
+
+        <RelativeLayout
+            android:id="@+id/rl_myoils_add"
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="30px"
+            android:background="@drawable/bg_btn_white_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/tianjiaicon"
+                android:drawablePadding="30px"
+                android:gravity="center_vertical"
+                android:paddingLeft="30px"
+                android:text="添加油品"
+                android:textColor="@color/black_555"
+                android:textSize="32px" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_myoils_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_myoils_add"
+            android:layout_marginTop="30px"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_listview_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/black_555"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

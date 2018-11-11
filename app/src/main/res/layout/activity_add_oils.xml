@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_oils"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.gloiot.hygooilstation.ui.activity.oilstation.AddOilsActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ll_addoils_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="油品型号" />
+
+            <TextView
+                android:id="@+id/tv_addoils_unit0"
+                style="@style/text_right_28"
+                android:text="#"
+                android:textColor="@color/orange_FEA523"
+                android:textSize="30px" />
+
+            <EditText
+                android:id="@+id/et_addoils_type"
+                style="@style/edit_hint"
+                android:layout_marginLeft="200px"
+                android:layout_toLeftOf="@id/tv_addoils_unit0"
+                android:digits="-0123456789"
+                android:hint="请输入油品型号" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="市场价" />
+
+            <TextView
+                android:id="@+id/tv_addoils_unit"
+                style="@style/text_right_28"
+                android:text="元/升"
+                android:textColor="@color/orange_FEA523"
+                android:textSize="30px" />
+
+            <EditText
+                android:id="@+id/et_addoils_market"
+                style="@style/edit_hint"
+                android:layout_marginLeft="200px"
+                android:layout_toLeftOf="@id/tv_addoils_unit"
+                android:hint="请输入当前油品市场价"
+                android:inputType="number|numberDecimal" />
+
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="让利金额" />
+
+            <TextView
+                android:id="@+id/tv_addoils_unit1"
+                style="@style/text_right_28"
+                android:text="元/升"
+                android:textColor="@color/orange_FEA523"
+                android:textSize="30px" />
+
+            <EditText
+                android:id="@+id/et_addoils_rangli"
+                style="@style/edit_hint"
+                android:layout_marginLeft="200px"
+                android:layout_toLeftOf="@id/tv_addoils_unit1"
+                android:hint="请输入当前油品让利金额"
+                android:inputType="number|numberDecimal" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_addoils_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_addoils_top"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="40px"
+        android:text="价格不同，推广的效果也不同哟！"
+        android:textColor="@color/black_555"
+        android:textSize="22px"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_rangli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_addoils_explain"
+        android:layout_marginLeft="440px"
+        android:layout_marginTop="40px"
+        android:text="让利："
+        android:textColor="@color/black_555"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/tv_addoils_ratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_addoils_explain"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="40px"
+        android:layout_toRightOf="@id/tv_rangli"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/orange_FF690C"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/tv_jiesuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_addoils_ratio"
+        android:layout_marginLeft="440px"
+        android:layout_marginTop="30px"
+        android:text="结算："
+        android:textColor="@color/black_555"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/tv_addoils_jiesuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_addoils_ratio"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="30px"
+        android:layout_toRightOf="@id/tv_jiesuan"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/orange_FF690C"
+        android:textSize="32px" />
+
+    <TextView
+        android:id="@+id/tv_addoils_comfirm"
+        style="@style/style_btn_confirm_orange"
+        android:layout_below="@id/tv_addoils_jiesuan"
+        android:layout_marginTop="88px"
+        android:text="确定" />
+
+</RelativeLayout>

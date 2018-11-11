@@ -1,0 +1,248 @@
+<resources>
+
+    <!-- Base application theme.
+           <item name="colorPrimaryDark">@color/orange_FF690C</item>
+              <item name="colorPrimary">@color/orange_FF690C</item>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/orange_FF690C</item>
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+    <!-- 二维码页面橙色主题-->
+    <style name="OrangeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/orange_FD853A</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 提现支付页面半透明主题-->
+    <style name="TranslucenceTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/bg_translucence</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+    </style>
+
+    <!-- 图片详情页面主题样式-->
+    <style name="IMTheme.Basic" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="IMTheme.Transparent" parent="@style/IMTheme.Basic">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 顶部弹出菜单页面透明样式-->
+    <style name="myTransparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+
+    <!-- dialog对话框样式-->
+    <style name="dialog_tran" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_untran" parent="dialog_tran">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 选择图片动画-->
+    <style name="anim_popup_dir">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <!--加载中样式-->
+    <style name="myProgressBarStyleLarge" parent="android:Widget.ProgressBar.Large">
+        　　
+        <item name="android:indeterminateDrawable">@drawable/progress_zyypay</item>
+        　　
+        <item name="android:minWidth">152px</item>
+        　　
+        <item name="android:maxWidth">152px</item>
+        　　
+        <item name="android:minHeight">152px</item>
+        　　
+        <item name="android:maxHeight">152px</item>
+    </style>
+
+    <!--橙色确定按钮-->
+    <style name="style_btn_confirm_orange">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88px</item>
+        <item name="android:layout_marginLeft">30px</item>
+        <item name="android:layout_marginRight">30px</item>
+        <item name="android:background">@drawable/bg_btn_yuanjiao_orange</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">32px</item>
+    </style>
+
+    <!--灰色确定按钮-->
+    <style name="style_btn_confirm_gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">88px</item>
+        <item name="android:layout_marginLeft">30px</item>
+        <item name="android:layout_marginRight">30px</item>
+        <item name="android:background">@drawable/bg_btn_yuanjiao_gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/orange_FF690C</item>
+        <item name="android:textSize">32px</item>
+    </style>
+
+    <!--满屏item水平分割线-->
+    <style name="match_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/gray_df</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <!--满屏item竖直分割线-->
+    <style name="match_view_vertical">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/gray_df</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <!--高度96px相对布局条目-->
+    <style name="style_relativelayout_96">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">96px</item>
+    </style>
+
+    <!--带点击效果的高度96px相对布局条目-->
+    <style name="style_relativelayout_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">96px</item>
+        <item name="android:background">@drawable/bg_btn_white</item>
+    </style>
+
+    <!--我的页面距左边距30px的imageview样式-->
+    <style name="imageview_left_my">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">40px</item>
+    </style>
+
+    <!--距左边距30px浅黑色16sp字体样式-->
+    <style name="black555_pint_16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">30px</item>
+        <item name="android:textSize">32px</item>
+        <item name="android:textColor">@color/black_555</item>
+    </style>
+
+    <!--gray_bbb ,15sp字体样式-->
+    <style name="graybbb_pint_15">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">@color/gray_bbb</item>
+    </style>
+
+    <!--距右边距30pxTextView字体样式-->
+    <style name="text_right_28">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginRight">30px</item>
+        <item name="android:textSize">28px</item>
+        <item name="android:textColor">@color/black_555</item>
+    </style>
+
+    <!--条目EditText样式-->
+    <style name="edit_hint">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">@color/gray_bbb</item>
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">@color/black_555</item>
+    </style>
+
+    <!--距右边距30pxEditView字体样式-->
+    <style name="edit_right_28">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">30px</item>
+        <item name="android:textColorHint">@color/gray_bbb</item>
+        <item name="android:textSize">28px</item>
+        <item name="android:textColor">@color/gray_666</item>
+    </style>
+
+
+    <!--距右边距30px的imageview样式-->
+    <style name="imageview_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">30px</item>
+    </style>
+
+    <style name="ActionSheetStyleiOS7">
+        <item name="actionSheetBackground">@android:color/transparent</item>
+        <item name="cancelButtonBackground">@drawable/slt_as_ios7_cancel_bt</item>
+        <item name="otherButtonTopBackground">@drawable/slt_as_ios7_other_bt_top</item>
+        <item name="otherButtonMiddleBackground">@drawable/slt_as_ios7_other_bt_middle</item>
+        <item name="otherButtonBottomBackground">@drawable/slt_as_ios7_other_bt_bottom</item>
+        <item name="otherButtonSingleBackground">@drawable/slt_as_ios7_other_bt_single</item>
+        <item name="cancelButtonTextColor">#1E82FF</item>
+        <item name="otherButtonTextColor">#1E82FF</item>
+        <item name="actionSheetPadding">10dp</item>
+        <item name="otherButtonSpacing">0dp</item>
+        <item name="cancelButtonMarginTop">10dp</item>
+        <item name="actionSheetTextSize">16sp</item>
+    </style>
+
+    <!--左侧textview基础样式-->
+    <style name="textview_base_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">30px</item>
+    </style>
+
+    <!--EditText基础样式-->
+    <style name="edittext_base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+</resources>

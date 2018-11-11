@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="@drawable/bg_white_3"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="108px">
+
+            <ImageView
+                android:id="@+id/iv_message_img"
+                style="@style/imageview_left_my"
+                android:layout_marginLeft="30px" />
+
+            <TextView
+                android:id="@+id/tv_message_type"
+                style="@style/black555_pint_16"
+                android:layout_marginLeft="120px"
+                android:text=""
+                android:textColor="@color/black_333"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_message_time"
+                style="@style/text_right_28"
+                android:text=""
+                android:textColor="@color/gray_666"
+                android:textSize="22px" />
+
+            <View style="@style/match_view" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_message_xitongshuoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="16px"
+                android:maxLines="2"
+                android:padding="30px"
+                android:text=""
+                android:textColor="@color/gray_666"
+                android:textSize="28px"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_message_money"
+                style="@style/text_right_28"
+                android:text=""
+                android:textSize="80px" />
+
+            <TextView
+                android:id="@+id/tv_message_jiaoyifrom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:layout_toLeftOf="@id/tv_message_money"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/orange_FEA523"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/tv_message_jiaoyishuonming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40px"
+                android:layout_marginLeft="30px"
+                android:layout_toLeftOf="@id/tv_message_money"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/gray_666"
+                android:textSize="26px" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_modify_loginpwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.gloiot.hygooilstation.ui.activity.mine.setting.ModifyLoginpwdActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ll_modifyLoginpwd_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="原密码" />
+
+            <EditText
+                android:id="@+id/et_modifyLoginpwd_original"
+                style="@style/edit_hint"
+                android:layout_marginLeft="200px"
+                android:hint="请输入原登录密码"
+                android:inputType="textPassword" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="新密码" />
+
+            <View
+                android:id="@+id/view"
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+
+            <EditText
+                android:id="@+id/et_modifyLoginpwd_new"
+                style="@style/edit_hint"
+                android:layout_marginLeft="200px"
+                android:hint="请输入新登录密码"
+                android:inputType="textPassword" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="再次输入" />
+
+            <EditText
+                android:id="@+id/et_modifyLoginpwd_confirm"
+                style="@style/edit_hint"
+                android:layout_marginLeft="200px"
+                android:hint="请再次输入新登录密码"
+                android:inputType="textPassword" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_modifyLoginpwd_commit"
+        style="@style/style_btn_confirm_orange"
+        android:layout_below="@id/ll_modifyLoginpwd_top"
+        android:layout_marginTop="88px"
+        android:text="确定" />
+
+</RelativeLayout>

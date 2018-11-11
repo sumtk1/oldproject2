@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_manage_cashier"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.gloiot.hygooilstation.ui.activity.mine.cashier.ManageCashierActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <ListView
+        android:id="@+id/lv_manageCashier_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px" />
+
+    <LinearLayout
+        android:id="@+id/ll_manageCashier_noCashier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="232px"
+            android:layout_height="238px"
+            android:src="@mipmap/dadad_shouyingyuan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="您还没有添加收银员"
+            android:textColor="@color/gray_999"
+            android:textSize="30px" />
+    </LinearLayout>
+
+</RelativeLayout>

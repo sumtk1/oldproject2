@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_map_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gloiot.hygooilstation.ui.map.MapTestActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/in_titlebar">
+
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_dili"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="10px"
+            android:background="#30000000">
+
+
+            <EditText
+                android:id="@+id/et_searchinfo"
+                style="@style/edit_hint"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_search"
+                style="@style/black555_pint_16"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="地理搜索" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_nidili"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_below="@id/ll_dili"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="10px"
+            android:background="#30000000">
+
+
+            <EditText
+                android:id="@+id/et_latloninfo"
+                style="@style/edit_hint"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_nisearch"
+                style="@style/black555_pint_16"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="逆地理搜索" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_onclickLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100px"
+            android:layout_marginLeft="30px"
+            android:text=""
+            android:textColor="@color/orange_FF690C"
+            android:textSize="28px" />
+
+        <TextView
+            android:id="@+id/tv_onclickLocationInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50px"
+            android:layout_marginLeft="30px"
+            android:text=""
+            android:textColor="@color/orange_FF690C"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

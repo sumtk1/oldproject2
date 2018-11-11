@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000">
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_popup_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:layout_marginRight="30px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/iv_xiaosanjiao">
+        <TextView
+            android:id="@+id/tv_2016"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016年"/>
+        <TextView
+            android:id="@+id/tv_2015"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2015年"/>
+        <TextView
+            android:id="@+id/tv_2014"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014年"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_xiaosanjiao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/xiaosanjiao"
+        android:layout_alignRight="@id/ll_popup_content"
+        android:layout_marginRight="10px"
+       />
+
+</RelativeLayout>

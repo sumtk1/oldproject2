@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    tools:context="com.gloiot.hygooilstation.ui.activity.trade.aboutpay.SelectGatheringStyleActivity">
+
+    <include layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ll_scan_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="390px"
+        android:layout_marginTop="24px"
+        android:background="@drawable/bg_btn_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginTop="80px"
+            android:src="@drawable/ic_scan_code_collection"
+            app:layout_auto_baseheight="width" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="扫码收款"
+            android:textColor="@color/black_555"
+            android:textSize="32px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_generate_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="390px"
+        android:layout_marginTop="24px"
+        android:background="@drawable/bg_btn_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginTop="80px"
+            android:src="@drawable/ic_two_dimensional_code_collection"
+            app:layout_auto_baseheight="width" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="二维码收款"
+            android:textColor="@color/black_555"
+            android:textSize="32px" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_trading_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context="com.gloiot.hygooilstation.ui.activity.message.TradingDetailActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180px">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="交易金额"
+                android:textColor="@color/gray_666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_detail_income"
+                style="@style/text_right_28"
+                android:text=""
+                android:textColor="@color/orange_FF690C"
+                android:textSize="40px" />
+
+            <View style="@style/match_view" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="类型"
+                android:textColor="@color/gray_666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_detail_type"
+                style="@style/text_right_28"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="时间"
+                android:textColor="@color/gray_666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_detail_time"
+                style="@style/text_right_28"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_detail_oddNum"
+            style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="交易单号"
+                android:textColor="@color/gray_666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_detail_oddNum"
+                style="@style/text_right_28"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="说明"
+                android:textColor="@color/gray_666"
+                android:textSize="28px" />
+
+            <TextView
+                android:id="@+id/tv_detail_explain"
+                style="@style/text_right_28"
+                android:text="" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

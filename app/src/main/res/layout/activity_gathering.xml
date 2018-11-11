@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gathering"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_FD853A"
+    tools:context="com.gloiot.hygooilstation.ui.activity.trade.GatheringActivity">
+
+    <RelativeLayout
+        android:id="@+id/in_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/orange_FD853A">
+
+        <ImageView
+            android:id="@+id/iv_toptitle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="30px"
+            android:src="@mipmap/fanhuibai" />
+
+        <TextView
+            android:id="@+id/tv_toptitle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/tv_toptitle_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30px"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="730px"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="100px"
+        android:background="@drawable/bg_btn_white_3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="扫二维码向我付款"
+                android:textColor="@color/black_555"
+                android:textSize="30px" />
+
+            <View style="@style/match_view" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_erweima"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="148px"
+            app:layout_auto_baseheight="width" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

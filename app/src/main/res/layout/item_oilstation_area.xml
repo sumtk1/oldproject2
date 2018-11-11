@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout style="@style/style_relativelayout_item">
+
+        <ImageView
+            android:id="@+id/iv_right"
+            style="@style/imageview_right"
+            android:src="@mipmap/xiangyoujiantou" />
+
+        <TextView
+            android:id="@+id/tv_oilstation_area"
+            style="@style/black555_pint_16"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/iv_right"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="" />
+
+        <View
+            style="@style/match_view"
+            android:layout_marginLeft="30px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

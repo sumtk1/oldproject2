@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_my_title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="交易"
+            android:textColor="@color/black_555"
+            android:textSize="36px" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_ccc" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="582px"
+        android:layout_below="@id/rl_my_title"
+        android:layout_marginTop="18px"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_df" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="290px"
+            android:background="@color/gray_df" />
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="359px"
+            android:background="@color/gray_df" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_trade_settlement"
+            android:layout_width="359px"
+            android:layout_height="290px"
+            android:layout_marginLeft="361px"
+            android:background="@drawable/bg_btn_white">
+
+            <ImageView
+                android:layout_width="126px"
+                android:layout_height="126px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="56px"
+                android:src="@mipmap/jiesuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40px"
+                android:text="结算"
+                android:textColor="@color/black"
+                android:textSize="26px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_trade_todayIncome"
+            android:layout_width="359px"
+            android:layout_height="290px"
+            android:layout_marginTop="292px"
+            android:background="@drawable/bg_btn_white">
+
+            <ImageView
+                android:layout_width="126px"
+                android:layout_height="126px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="56px"
+                android:src="@mipmap/shouyi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40px"
+                android:text="今日收益"
+                android:textColor="@color/black"
+                android:textSize="26px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_trade_statistics"
+            android:layout_width="359px"
+            android:layout_height="290px"
+            android:layout_marginLeft="361px"
+            android:layout_marginTop="292px"
+            android:background="@drawable/bg_btn_white">
+
+            <ImageView
+                android:layout_width="126px"
+                android:layout_height="126px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="56px"
+                android:src="@mipmap/tongji" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40px"
+                android:text="统计"
+                android:textColor="@color/black"
+                android:textSize="26px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <View style="@style/match_view" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/rl_trade_gathering"
+            android:layout_width="359px"
+            android:layout_height="290px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_btn_white">
+
+            <ImageView
+                android:layout_width="126px"
+                android:layout_height="126px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="56px"
+                android:src="@mipmap/shoukuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40px"
+                android:text="收款"
+                android:textColor="@color/black"
+                android:textSize="26px" />
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

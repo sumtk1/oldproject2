@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_qualification_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_bg"
+                tools:context="com.gloiot.hygooilstation.ui.activity.authentication.QualificationInfoActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginBottom="20px">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_qualification_next">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_qualification_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="66px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:text="负责人身份证信息"
+                        android:textColor="@color/gray_777"
+                        android:textSize="28px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_qualification_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="272px"
+                    android:layout_below="@id/rl_qualification_01"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_qualification_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="30px"
+                        android:text="手持身份证照"
+                        android:textColor="@color/black_555"
+                        android:textSize="30px"/>
+
+                    <ImageView
+                        android:id="@+id/iv_qualification_shouchi"
+                        android:layout_width="224px"
+                        android:layout_height="150px"
+                        android:layout_below="@id/tv_qualification_01"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="30px"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/but_tianjia"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_qualification_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="250px"
+                    android:layout_below="@id/rl_qualification_02"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/ll_qualification_front"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_qualification_front"
+                            android:layout_width="224px"
+                            android:layout_height="150px"
+                            android:layout_marginTop="30px"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/but_tianjia"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20px"
+                            android:layout_marginTop="20px"
+                            android:text="添加身份证正面"
+                            android:textColor="@color/black_555"
+                            android:textSize="24px"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_qualification_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="284px"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/iv_qualification_back"
+                            android:layout_width="224px"
+                            android:layout_height="150px"
+                            android:layout_marginTop="30px"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/but_tianjia"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20px"
+                            android:layout_marginTop="20px"
+                            android:text="添加身份证背面"
+                            android:textColor="@color/black_555"
+                            android:textSize="24px"/>
+
+                    </LinearLayout>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_qualification_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="96px"
+                    android:layout_below="@id/rl_qualification_03"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="姓名"/>
+
+                    <EditText
+                        android:id="@+id/et_qualification_name"
+                        style="@style/edit_hint"
+                        android:layout_marginLeft="200px"
+                        android:hint="请填写负责人姓名"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_qualification_idNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="96px"
+                    android:layout_below="@id/rl_qualification_name"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="身份证号"/>
+
+                    <EditText
+                        android:id="@+id/et_qualification_idNum"
+                        style="@style/edit_hint"
+                        android:layout_marginLeft="200px"
+                        android:digits="0123456789xX"
+                        android:hint="请填写负责人身份证号"/>
+
+                    <View
+                        style="@style/match_view"
+                        android:layout_marginLeft="30px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_qualification_04"
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:layout_below="@id/rl_qualification_idNum">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30px"
+                        android:text="营业执照信息"
+                        android:textColor="@color/gray_777"
+                        android:textSize="28px"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_qualification_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="270px"
+                    android:layout_below="@id/rl_qualification_04"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_qualification_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="30px"
+                        android:text="执照图片"
+                        android:textColor="@color/black_555"
+                        android:textSize="30px"/>
+
+                    <ImageView
+                        android:id="@+id/iv_qualification_zhizhao"
+                        android:layout_width="224px"
+                        android:layout_height="150px"
+                        android:layout_below="@id/tv_qualification_02"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="30px"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/but_tianjia"/>
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_qualification_next"
+            style="@style/style_btn_confirm_orange"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20px"
+            android:text="提交"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

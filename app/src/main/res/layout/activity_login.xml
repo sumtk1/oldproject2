@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.gloiot.hygooilstation.ui.activity.login.LoginActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ll_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="账号" />
+
+            <EditText
+                android:id="@+id/et_login_account"
+                style="@style/edit_hint"
+                android:layout_marginLeft="140px"
+                android:hint="请输入账号"
+                android:inputType="number"
+                android:text="" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="密码" />
+
+            <EditText
+                android:id="@+id/et_login_password"
+                style="@style/edit_hint"
+                android:layout_marginLeft="140px"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:text="" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/style_btn_confirm_orange"
+        android:layout_below="@id/ll_01"
+        android:layout_marginTop="60px"
+        android:text="登录" />
+
+    <TextView
+        android:id="@+id/tv_login_forgetPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_login"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="60px"
+        android:text="忘记密码"
+        android:textColor="@color/blue_478AF5"
+        android:textSize="28px" />
+
+
+</RelativeLayout>

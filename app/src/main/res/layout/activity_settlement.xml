@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_settlement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_bg"
+                tools:context="com.gloiot.hygooilstation.ui.activity.trade.SettlementActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar"/>
+
+    <com.gloiot.hygooilstation.ui.widget.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pulltorefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/in_titlebar">
+
+        <include layout="@layout/load_head"/>
+
+        <com.gloiot.hygooilstation.ui.widget.pulltorefresh.PullableScrollView
+            android:id="@+id/pullablescrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/rl_settlement_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="132px"
+                    android:layout_marginTop="1px"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="24px"
+                        android:text="上一次结算时间"
+                        android:textColor="@color/black_555"
+                        android:textSize="26px"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_settlement_lasttime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_01"
+                        android:layout_marginLeft="30px"
+                        android:layout_marginTop="24px"
+                        android:drawableLeft="@mipmap/shijian"
+                        android:drawablePadding="10px"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/gray_999"
+                        android:textSize="22px"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_settlement_gosettle"
+                        android:layout_width="120px"
+                        android:layout_height="60px"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30px"
+                        android:background="@mipmap/jiesuanbeijing1"
+                        android:gravity="center"
+                        android:text="结算"
+                        android:textColor="@color/orange_FF690C"
+                        android:textSize="36px"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_settlement_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:layout_below="@id/rl_settlement_top">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="结算单"
+                        android:textSize="28px"/>
+                </RelativeLayout>
+
+                <com.gloiot.hygooilstation.ui.widget.ListViewForScrollView
+                    android:id="@+id/lv_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rl_settlement_text"
+                    android:divider="#E0E0E0"
+                    android:dividerHeight="2px"/>
+
+            </RelativeLayout>
+
+        </com.gloiot.hygooilstation.ui.widget.pulltorefresh.PullableScrollView>
+
+        <include layout="@layout/load_more"/>
+
+    </com.gloiot.hygooilstation.ui.widget.pulltorefresh.PullToRefreshLayout>
+
+    <TextView
+        android:id="@+id/tv_listview_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:textColor="@color/black_555"
+        android:textSize="28px"/>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gloiot.hygooilstation.ui.widget.CheckableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_mypopitem_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_popsingletext_text"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+
+
+</com.gloiot.hygooilstation.ui.widget.CheckableLinearLayout>

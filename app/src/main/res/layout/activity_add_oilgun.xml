@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_oilgun"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.gloiot.hygooilstation.ui.activity.oilstation.AddOilgunActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_addOilgun_confirm"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/in_titlebar"
+        android:layout_centerVertical="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginTop="5px"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/youqing_huang"
+                    android:drawablePadding="34px"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30px"
+                    android:text="油枪编号"
+                    android:textColor="@color/black_555"
+                    android:textSize="32px" />
+
+                <EditText
+                    android:id="@+id/et_addOilgun_num"
+                    style="@style/edit_right_28"
+                    android:layout_toRightOf="@id/tv_left"
+                    android:gravity="right|center_vertical"
+                    android:hint="请输入油枪编号"
+                    android:inputType="number"
+                    android:textColor="@color/black_555"
+                    android:textSize="36px" />
+
+                <View
+                    style="@style/match_view"
+                    android:layout_marginLeft="30px" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/black555_pint_16"
+                    android:text="油枪打印机编码：" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_addOilgun_select"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="290px">
+
+                    <TextView
+                        android:id="@+id/tv_addOilgun_select"
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="5px"
+                        android:hint="请选择"
+                        android:textColorHint="@color/gray_888"
+                        android:textSize="30px" />
+
+                    <ImageView
+                        style="@style/imageview_right"
+                        android:src="@mipmap/xialaicon" />
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/match_view"
+                    android:layout_marginLeft="30px" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/black555_pint_16"
+                    android:text="前台打印机编码：" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_addOilgun_select_qiantai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="290px">
+
+                    <TextView
+                        android:id="@+id/tv_addOilgun_select_qiantai"
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="5px"
+                        android:hint="请选择"
+                        android:textColorHint="@color/gray_888"
+                        android:textSize="30px" />
+
+                    <ImageView
+                        style="@style/imageview_right"
+                        android:src="@mipmap/xialaicon" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90px">
+
+                <TextView
+                    style="@style/black555_pint_16"
+                    android:text="*如没有添加打印设备编号，将不会打印支付凭证"
+                    android:textColor="@color/red"
+                    android:textSize="20px" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_addOilgun_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn_juxing_orange"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="36px" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

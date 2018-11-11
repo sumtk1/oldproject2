@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_wallet_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_bg"
+                tools:context="com.gloiot.hygooilstation.ui.activity.mine.wallet.WalletDetailActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180px">
+
+            <TextView
+                android:id="@+id/tv_money_flag"
+                style="@style/black555_pint_16"
+                android:text=""
+                android:textColor="@color/gray_666"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_detail_income"
+                style="@style/text_right_28"
+                android:text=""
+                android:textColor="@color/orange_FF690C"
+                android:textSize="90px"/>
+
+            <View style="@style/match_view"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/style_relativelayout_96"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="类型"
+                android:textColor="@color/gray_666"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_detail_type"
+                style="@style/text_right_28"
+                android:text=""/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/style_relativelayout_96"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="状态"
+                android:textColor="@color/gray_666"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_detail_state"
+                style="@style/text_right_28"
+                android:text=""/>
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="时间"
+                android:textColor="@color/gray_666"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_detail_time"
+                style="@style/text_right_28"
+                android:text=""/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/style_relativelayout_96"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="剩余金额"
+                android:textColor="@color/gray_666"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_detail_surplus"
+                style="@style/text_right_28"
+                android:text=""/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_detail_jiaoyi_money"
+            style="@style/style_relativelayout_96"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="交易金额"
+                android:textColor="@color/gray_666"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_detail_jiaoyi_money"
+                style="@style/text_right_28"
+                android:text=""/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_detail_oddNum"
+            style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="交易单号"
+                android:textColor="@color/gray_666"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_detail_oddNum"
+                style="@style/text_right_28"
+                android:text=""/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="96px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="30px"
+                android:text="说明"
+                android:textColor="@color/gray_666"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_detail_explain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="150px"
+                android:layout_marginRight="30px"
+                android:maxLines="3"
+                android:text=""
+                android:textColorHint="@color/black_555"
+                android:textSize="28px"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

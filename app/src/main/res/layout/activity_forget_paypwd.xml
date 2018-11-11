@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forget_paypwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.gloiot.hygooilstation.ui.activity.mine.wallet.ForgetPaypwdActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ll_forgetPaypwd_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="账号" />
+
+            <EditText
+                android:id="@+id/et_forgetPaypwd_account"
+                style="@style/edit_hint"
+                android:layout_marginLeft="200px"
+                android:hint="请输入账号"
+                android:inputType="number" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="身份证号" />
+
+            <EditText
+                android:id="@+id/et_forgetPaypwd_IDNum"
+                style="@style/edit_hint"
+                android:layout_marginLeft="200px"
+                android:hint="请输入身份证号" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="手机号" />
+
+            <EditText
+                android:id="@+id/et_forgetPaypwd_phoneNum"
+                style="@style/edit_hint"
+                android:layout_marginLeft="200px"
+                android:hint="请输入手机号"
+                android:inputType="number" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="验证码" />
+
+            <com.gloiot.hygooilstation.ui.widget.TimeButton
+                android:id="@+id/tv_forgetPaypwd_getyzm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30px"
+                android:gravity="center_vertical"
+                android:text="获取语音验证码"
+                android:textColor="@color/blue_478AF5"
+                android:textSize="30px" />
+
+            <EditText
+                android:id="@+id/et_forgetPaypwd_yzm"
+                style="@style/edit_hint"
+                android:layout_marginLeft="200px"
+                android:layout_toLeftOf="@id/tv_forgetPaypwd_getyzm"
+                android:hint="请输入验证码"
+                android:inputType="number" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_forgetPaypwd_next"
+        style="@style/style_btn_confirm_orange"
+        android:layout_below="@+id/ll_forgetPaypwd_top"
+        android:layout_marginTop="88px"
+        android:text="下一步" />
+
+
+</RelativeLayout>

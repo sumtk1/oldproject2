@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_eachoils_gun"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.gloiot.hygooilstation.ui.activity.oilstation.MyEachoilsGunActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_oilsgun_top"
+        android:layout_width="match_parent"
+        android:layout_height="420px"
+        android:layout_below="@id/in_titlebar"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_oilsgun_oilstype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="200px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_oilsgun_addOilgun"
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_btn_juxing_orange"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加新油枪"
+            android:textColor="@color/white"
+            android:textSize="32px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rl_oilsgun_addOilgun"
+        android:layout_below="@id/rl_oilsgun_top">
+
+        <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30px" />
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/black_555"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

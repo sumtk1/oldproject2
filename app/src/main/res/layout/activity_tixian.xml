@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_tixian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_bg"
+                tools:context="com.gloiot.hygooilstation.ui.activity.mine.wallet.TixianActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_tixian_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="2px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                android:id="@+id/tv_extract_type"
+                style="@style/black555_pint_16"
+                android:text=""/>
+
+            <RelativeLayout
+                android:id="@+id/rl_tixian_selectbank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="270px">
+
+                <TextView
+                    android:id="@+id/tv_tixian_selectbank"
+                    style="@style/black555_pint_16"
+                    android:layout_marginLeft="5px"
+                    android:hint=""
+                    android:textColorHint="@color/gray_bbb"
+                    android:textSize="30px"/>
+
+                <ImageView
+                    style="@style/imageview_right"
+                    android:src="@mipmap/xialaicon"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tixian_money"
+            style="@style/style_relativelayout_96"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="30px"
+                android:background="@color/gray_df"/>
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="提现金额"/>
+
+            <EditText
+                android:id="@+id/et_tixian_money"
+                style="@style/edit_hint"
+                android:layout_marginLeft="270px"
+                android:hint="请输入提现的金额数"
+                android:inputType="number|numberDecimal"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tixian_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_tixian_top"
+        android:padding="30px"
+        android:text=""
+        android:textColor="@color/gray_666"
+        android:textSize="24px"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_tixian_forgetPaypwd"
+        style="@style/text_right_28"
+        android:layout_below="@id/tv_tixian_explain"
+        android:layout_marginTop="60px"
+        android:text="忘记支付密码"
+        android:textColor="@color/blue_478AF5"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_tixian_comfirm"
+        style="@style/style_btn_confirm_orange"
+        android:layout_below="@+id/tv_tixian_forgetPaypwd"
+        android:layout_marginTop="88px"
+        android:text="提现"/>
+
+    <include
+        layout="@layout/include_keyboardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

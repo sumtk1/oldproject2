@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_splash"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_splash"
+                tools:context="com.gloiot.hygooilstation.ui.activity.login.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/qidongye_new"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_youzhanlianmeng_splash"
+        app:layout_auto_baseheight="width"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30px"
+        android:text="多赚·便捷·安全"
+        android:textColor="@color/white"
+        android:textSize="30px"/>
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80px"
+        android:text="环游购-油站联盟"
+        android:textColor="@color/white"
+        android:textSize="30px"/>
+
+    <TextView
+        android:id="@+id/tv_version_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30px"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="28px"/>
+
+</RelativeLayout>

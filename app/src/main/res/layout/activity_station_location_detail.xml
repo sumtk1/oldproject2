@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_station_location_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gloiot.hygooilstation.ui.map.StationLocationDetailActivity">
+
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/in_titlebar">
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tv_onclickLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100px"
+            android:layout_marginLeft="30px"
+            android:textColor="@color/orange_FF690C"
+            android:textSize="28px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

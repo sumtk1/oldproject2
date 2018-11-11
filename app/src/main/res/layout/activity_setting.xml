@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.gloiot.hygooilstation.ui.activity.mine.setting.SettingActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ll_setting_01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_setting_modifyLoginpwd"
+            style="@style/style_relativelayout_item">
+
+            <ImageView
+                style="@style/imageview_left_my"
+                android:src="@mipmap/xiugaidenglu" />
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:layout_marginLeft="115px"
+                android:text="修改登录密码" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="40px" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_setting_modifyPaypwd"
+            style="@style/style_relativelayout_item"
+            android:visibility="visible">
+
+            <ImageView
+                style="@style/imageview_left_my"
+                android:src="@mipmap/xiugai_zhifu" />
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:layout_marginLeft="115px"
+                android:text="修改支付密码" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_setting_logout"
+        style="@style/style_relativelayout_item"
+        android:layout_below="@id/ll_setting_01"
+        android:layout_marginTop="30px">
+
+        <ImageView
+            style="@style/imageview_left_my"
+            android:src="@mipmap/tuichuzhanghao" />
+
+        <TextView
+            style="@style/black555_pint_16"
+            android:layout_marginLeft="115px"
+            android:text="退出当前账号" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

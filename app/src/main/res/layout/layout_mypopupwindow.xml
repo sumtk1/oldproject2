@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_01"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:background="@color/orange_FF690C"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ll_popupWindow_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:paddingRight="30px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消"
+                    android:textColor="@color/white"
+                    android:textSize="32px" />
+
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:src="@mipmap/ic_close"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_popupWindow_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/tv_popupWindow_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingLeft="30px"
+                android:paddingRight="30px"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="32px" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_popupWindow_explain"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="32px"
+            android:visibility="gone" />
+
+        <View style="@style/match_view" />
+
+        <FrameLayout
+            android:id="@+id/mydialog_custompanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View style="@style/match_view" />
+
+        <RelativeLayout
+            android:id="@+id/rl_02"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:gravity="center_vertical"
+            android:padding="20px"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="36px" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

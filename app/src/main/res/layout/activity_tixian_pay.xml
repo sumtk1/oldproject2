@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tixian_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_translucence"
+    tools:context="com.gloiot.hygooilstation.ui.activity.mine.wallet.TixianPayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="84px"
+        android:background="@drawable/bg_white_3">
+
+        <RelativeLayout
+            android:id="@+id/rl_tixianpay_top"
+            style="@style/style_relativelayout_96">
+
+            <ImageView
+                android:id="@+id/iv_tixianpay_cancel"
+                style="@style/imageview_left_my"
+                android:padding="20px"
+                android:src="@mipmap/xx" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="请输入支付密码"
+                android:textColor="@color/black_555"
+                android:textSize="36px" />
+
+            <View style="@style/match_view" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tixianpay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_tixianpay_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80px"
+            android:text="￥200.00"
+            android:textColor="@color/black_555"
+            android:textSize="60px" />
+
+        <com.gloiot.hygooilstation.ui.widget.PwdInputView
+            android:id="@+id/paypwd_pwd"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/rl_tixianpay_top"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="100dp"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="true"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="6" />
+
+    </RelativeLayout>
+
+
+    <include
+        layout="@layout/include_keyboardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

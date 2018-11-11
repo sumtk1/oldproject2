@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_delete_cashier"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.gloiot.hygooilstation.ui.activity.mine.cashier.DeleteCashierActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ll_deleteCashier_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <ImageView
+                style="@style/imageview_left_my"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/shouyinyuanguanli" />
+
+            <TextView
+                android:id="@+id/tv_deleteCashier_name"
+                style="@style/black555_pint_16"
+                android:layout_marginLeft="160px"
+                android:text="" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="账号：" />
+
+            <TextView
+                android:id="@+id/tv_deleteCashier_account"
+                style="@style/black555_pint_16"
+                android:layout_marginLeft="160px"
+                android:text="" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="手机号：" />
+
+            <TextView
+                android:id="@+id/tv_deleteCashier_phoneNum"
+                style="@style/black555_pint_16"
+                android:layout_marginLeft="160px"
+                android:text="" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_deleteCashier_commit"
+        style="@style/style_btn_confirm_orange"
+        android:layout_below="@id/ll_deleteCashier_top"
+        android:layout_marginTop="256px"
+        android:text="删除收银员" />
+
+</RelativeLayout>

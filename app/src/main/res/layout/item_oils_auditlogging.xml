@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_auditlogging_top"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="@color/color_bg"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_auditlogging_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="2016-09-20 11:09"
+                android:textColor="@color/black_555"
+                android:textSize="24px" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:layout_below="@id/rl_auditlogging_top">
+
+            <TextView
+                android:id="@+id/tv_auditlogging_state"
+                android:layout_width="150px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="30px" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_auditlogging_type"
+                    android:layout_width="250px"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="80px" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/tv_auditlogging_type">
+
+                    <LinearLayout
+                        android:id="@+id/ll_auditlogging_left"
+                        android:layout_width="140px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:id="@+id/tv_auditlogging_market"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/black_555"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/tv_auditlogging_rangli"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/orange_FEA523"
+                            android:textSize="30px" />
+
+                        <TextView
+                            android:id="@+id/tv_auditlogging_ratio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/orange_FF690C"
+                            android:textSize="30px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/ll_auditlogging_left"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="96px"
+                                android:layout_height="32px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="50px"
+                                android:background="@mipmap/huise"
+                                android:gravity="center"
+                                android:text="市场价"
+                                android:textColor="@color/white"
+                                android:textSize="22px" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="96px"
+                                android:layout_height="32px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="50px"
+                                android:background="@mipmap/huangse"
+                                android:gravity="center"
+                                android:text="让利价"
+                                android:textColor="@color/white"
+                                android:textSize="22px" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="96px"
+                                android:layout_height="32px"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="50px"
+                                android:background="@mipmap/juse"
+                                android:gravity="center"
+                                android:text="结算比"
+                                android:textColor="@color/white"
+                                android:textSize="22px" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

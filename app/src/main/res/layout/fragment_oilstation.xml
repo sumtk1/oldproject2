@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rl_fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="油站"
+            android:textColor="@color/black_555"
+            android:textSize="36px" />
+
+        <ImageView
+            android:id="@+id/iv_myoilstation_bianji"
+            style="@style/imageview_right"
+            android:layout_height="match_parent"
+            android:paddingLeft="30px"
+            android:src="@mipmap/bianji" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray_ccc" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_fragment_title">
+
+        <ScrollView
+            android:id="@+id/scrollView_myoilstation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/myOilstation_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_below="@id/rl_fragment_title"
+
+                    app:indicator_drawable_selected="@drawable/selected_radius_5" />
+
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:id="@+id/ll_myOilstation_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="180px"
+                    android:layout_below="@id/myOilstation_banner"
+                    android:layout_marginTop="30px"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90px">
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            style="@style/black555_pint_16"
+                            android:drawableLeft="@mipmap/dianhua"
+                            android:drawablePadding="20px"
+                            android:text="油站电话" />
+
+                        <TextView
+                            android:id="@+id/tv_myOilstation_phoneNum"
+                            style="@style/text_right_28"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="240px"
+                            android:gravity="right|center_vertical"
+                            android:text=""
+                            android:textColor="@color/gray_666" />
+
+                        <View
+                            style="@style/match_view"
+                            android:layout_marginLeft="30px" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="90px">
+
+                        <TextView
+                            android:id="@+id/tv_location"
+                            style="@style/black555_pint_16"
+                            android:drawableLeft="@mipmap/dingwei_icon"
+                            android:drawablePadding="20px"
+                            android:text="油站地址" />
+
+                        <TextView
+                            android:id="@+id/tv_myOilstation_location"
+                            style="@style/text_right_28"
+                            android:layout_marginLeft="20px"
+                            android:layout_toRightOf="@id/tv_location"
+                            android:gravity="right|center_vertical"
+                            android:text="" />
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                </com.zhy.autolayout.AutoLinearLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_myOilstation_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="66px"
+                    android:layout_below="@id/ll_myOilstation_01"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:text="油站简介" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_myOilstation_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_myOilstation_01"
+                    android:background="@color/white"
+                    android:minHeight="180px"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_myOilstation_jianjie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="30px"
+                        android:gravity="top"
+                        android:hint="请您先完善油站信息后，再添加油品"
+                        android:text=""
+                        android:textColor="@color/gray_666"
+                        android:textColorHint="@color/gray_bbb"
+                        android:textSize="28px" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/rl_myOilstation_myoil"
+                    android:layout_width="match_parent"
+                    android:layout_height="90px"
+                    android:layout_below="@id/rl_myOilstation_02"
+                    android:layout_marginTop="40px"
+                    android:background="@color/orange_FEA523">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:drawableLeft="@mipmap/wo_d_shangp"
+                        android:drawablePadding="20px"
+                        android:text="我的油品"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        style="@style/imageview_right"
+                        android:src="@mipmap/tiaozhuan_bai" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_myOilstation_myOilgun"
+                    android:layout_width="match_parent"
+                    android:layout_height="90px"
+                    android:layout_below="@id/rl_myOilstation_myoil"
+                    android:layout_marginBottom="62px"
+                    android:layout_marginTop="30px"
+                    android:background="@color/orange_FF690C">
+
+                    <TextView
+                        style="@style/black555_pint_16"
+                        android:layout_marginLeft="40px"
+                        android:drawableLeft="@mipmap/youqing_1"
+                        android:drawablePadding="20px"
+                        android:text="我的油枪"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        style="@style/imageview_right"
+                        android:src="@mipmap/tiaozhuan_bai" />
+
+                </RelativeLayout>
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </ScrollView>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

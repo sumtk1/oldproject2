@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.gloiot.hygooilstation"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 6
+        versionName "1.2.1"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':photopicker')
+
+    //    compile 'me.iwf.photopicker:PhotoPicker:0.9.5@aar'
+
+    //    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    //    compile 'com.android.support:recyclerview-v7:25.1.0'
+
+    //    compile 'com.android.support:design:25.1.0'
+
+    // 微信支付
+    compile files('libs/libammsdk.jar')
+
+    // 支付宝支付
+    compile files('libs/alipaySdk-20160516.jar')
+
+    // 自适应框架
+    compile project(':autolayout')
+
+    // 万能适配器
+    compile project(':base-adapter-library')
+
+    // 网络请求
+    compile files('libs/android-async-http-1.4.9.jar')
+    compile files('libs/httpclient-4.3.6.jar')
+
+    // AES加解密
+
+    //    compile files('libs/org.bouncycastle.jar')
+
+    // 选择图片框架
+    compile project(':galleryfinal')
+
+    // picasso图片框架
+
+    // 阿里云
+    compile files('libs/aliyun-oss-sdk-android-2.2.0.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+
+    //    compile files('libs/okhttp-3.2.0.jar')
+
+    //    compile files('libs/okio-1.6.0.jar')
+
+    //使低于API 11的系统也能够使用View的属性动画的动画库，作者JakeWharton
+
+    //轮播控件
+
+    //    compile project(':banner')
+
+    //最新版本
+
+    // websocket io通讯
+
+    //适配状态栏背景色及字体颜色
+
+    //Tencent Bugly,其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号
+
+    //侧滑SwipeRecyclerView库
+
+    //未读消息的小红点
+
+    //butterknife
+
+    //    compile 'com.jakewharton:butterknife:8.6.0'
+
+    //二维码
+
+    //    compile 'cn.yipianfengye.android:zxing-library:2.1'
+    compile project(':lib-zxing')
+    compile project(':easyrecyclerview')
+    compile project(':chatsdk')
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha9'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.github.nkzawa:socket.io-client:0.3.0'
+    compile 'com.githang:status-bar-compat:0.4.4'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.2'
+    compile 'q.rorbin:badgeview:1.1.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    testCompile 'junit:junit:4.12'
+}

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_modify_paypwd_first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    tools:context="com.gloiot.hygooilstation.ui.activity.mine.setting.ModifyPaypwdFirstActivity">
+
+    <include
+        android:id="@+id/in_titlebar"
+        layout="@layout/include_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ll_modifyLoginpwd_first_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_titlebar"
+        android:layout_marginTop="30px"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="账号" />
+
+            <EditText
+                android:id="@+id/et_modifypaypwd_first_account"
+                style="@style/edit_hint"
+                android:layout_marginLeft="190px"
+                android:hint="请输入账号"
+                android:inputType="number" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="手机号" />
+
+            <EditText
+                android:id="@+id/et_modifypaypwd_first_phoneNum"
+                style="@style/edit_hint"
+                android:layout_marginLeft="190px"
+                android:hint="请输入油站负责人手机号"
+                android:inputType="number" />
+
+            <View
+                style="@style/match_view"
+                android:layout_marginLeft="30px" />
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/style_relativelayout_96">
+
+            <TextView
+                style="@style/black555_pint_16"
+                android:text="验证码" />
+
+            <com.gloiot.hygooilstation.ui.widget.TimeButton
+                android:id="@+id/tv_modifyLoginpwd_first_getyzm"
+                style="@style/text_right_28"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="获取语音验证码"
+                android:textColor="@color/blue_478AF5"
+                android:textSize="30px" />
+
+            <EditText
+                android:id="@+id/et_modifypaypwd_first_yzm"
+                style="@style/edit_hint"
+                android:layout_marginLeft="190px"
+                android:layout_toLeftOf="@id/tv_modifyLoginpwd_first_getyzm"
+                android:hint="请输入验证码"
+                android:inputType="number" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_modifyLoginpwd_first_next"
+        style="@style/style_btn_confirm_orange"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="下一步" />
+</RelativeLayout>

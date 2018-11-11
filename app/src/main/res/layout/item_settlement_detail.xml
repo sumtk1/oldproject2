@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_settlementdetail_money"
+            style="@style/text_right_28"
+            android:text=""
+            android:textColor="@color/orange_FF690C"
+            android:textSize="50px" />
+
+        <LinearLayout
+            android:id="@+id/ll_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="24px"
+            android:layout_toLeftOf="@id/tv_settlementdetail_money">
+
+            <TextView
+                android:id="@+id/tv_settlementdetail_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black_555"
+                android:textSize="32px"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18px"
+                android:background="@color/gray_f3"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_settlementdetail_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0px"
+                android:text=""
+                android:textColor="@color/black_555"
+                android:textSize="28px" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_01"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="24px"
+            android:text="交易单号："
+            android:textColor="@color/gray_666"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/tv_settlementdetail_oddNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_01"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="24px"
+            android:layout_toLeftOf="@id/tv_settlementdetail_money"
+            android:layout_toRightOf="@id/tv_01"
+            android:text=""
+            android:textColor="@color/gray_666"
+            android:textSize="22px" />
+
+        <TextView
+            android:id="@+id/tv_settlementdetail_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_settlementdetail_oddNum"
+            android:layout_marginBottom="24px"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="24px"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/gray_666"
+            android:textSize="20px" />
+    </RelativeLayout>
+
+</RelativeLayout>
